@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthikeya Vuyyuru - Portfolio</title>
+    <meta name="description" content="Karthikeya Vuyyuru - Software Developer | Generative AI & Machine Learning Engineer & STEM Educator. Explore my projects, skills, and experience in AI/ML and STEM education.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-fixed">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-brand">Karthikeya Vuyyuru</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <button class="nav-link" data-target="about">About</button>
+                    <button class="nav-link" data-target="work">Work</button>
+                    <button class="nav-link" data-target="education">Education</button>
+                    <button class="nav-link" data-target="contact">Contact</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="nav-mobile-toggle">
+                    <button class="mobile-menu-btn">
+                        <i data-lucide="menu" class="menu-icon"></i>
+                        <i data-lucide="x" class="close-icon hidden"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile hidden">
+                <div class="nav-mobile-content">
+                    <button class="nav-link-mobile" data-target="about">About</button>
+                    <button class="nav-link-mobile" data-target="work">Work</button>
+                    <button class="nav-link-mobile" data-target="education">Education</button>
+                    <button class="nav-link-mobile" data-target="contact">Contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Karthikeya Vuyyuru</h1>
+                <p class="hero-subtitle">Software Developer | Generative AI & Machine Learning Engineer</p>
+                <p class="hero-description">
+                    Karthikeya Vuyyuru is a highly motivated software developer specializing in Generative AI and machine learning. 
+                    He has built impactful Gen AI chatbots, intelligent web applications, and production-grade systems, 
+                    leveraging Python, cloud platforms, and AI/ML.
+                </p>
+                <p class="hero-tagline">"Bridges the gap between AI concepts and real-world applications."</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" data-target="work">Explore My Work</button>
+                    <button class="btn-secondary" data-target="contact">Get In Touch</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">The "Why" behind my passion for technology and education</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I am passionate about crafting scalable production systems using Python, AI/ML, and cloud technologies. 
+                        During my B.Tech in Computer Science (CSE) at Sir CR Reddy College, I learned core CS fundamentals 
+                        (algorithms, data structures, etc.) and immediately applied them to real projects.
+                    </p>
+                    
+                    <div class="highlight-box tech-blue-border">
+                        <h4 class="highlight-title">Student Advisory Bot Example:</h4>
+                        <p class="highlight-text">
+                            For example, I developed the Student Advisory Bot – an AI chatbot using Google's Gemini API and Flask – 
+                            that automated student inquiries and cut 70% of manual effort.
+                        </p>
+                    </div>
+
+                    <div class="highlight-box teal-border">
+                        <h4 class="highlight-title">Medical Imaging Project Example:</h4>
+                        <p class="highlight-text">
+                            I also built machine-learning pipelines (Random Forest and CNN) for medical imaging, 
+                            achieving 89% accuracy in detecting brain diseases.
+                        </p>
+                    </div>
+
+                    <p class="about-text">
+                        Today, I continually seek to tackle complex problems with innovative solutions. 
+                        I recently completed the Google Cloud Generative AI Virtual Internship (SmartInternz), 
+                        where I designed prompt workflows using Vertex AI's LLMs.
+                    </p>
+
+                    <div class="philosophy-box">
+                        <p class="philosophy-label">Guiding Philosophy:</p>
+                        <p class="philosophy-text">
+                            "Let's turn cutting-edge AI into practical, real-world solutions."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="quick-facts">
+                    <h3 class="quick-facts-title">Quick Facts</h3>
+                    <div class="fact-list">
+                        <div class="fact-item">
+                            <i data-lucide="code" class="fact-icon tech-blue"></i>
+                            <p class="fact-text">Hands-on experience in building AI chatbots, ML models, and web applications</p>
+                        </div>
+                        <div class="fact-item">
+                            <i data-lucide="brain" class="fact-icon teal"></i>
+                            <p class="fact-text">Developed a brain disease detection model with 89% accuracy</p>
+                        </div>
+                        <div class="fact-item">
+                            <i data-lucide="shopping-cart" class="fact-icon tech-blue"></i>
+                            <p class="fact-text">Built a full e-commerce frontend (MobiKart) with modern web technologies</p>
+                        </div>
+                        <div class="fact-item">
+                            <i data-lucide="cloud" class="fact-icon teal"></i>
+                            <p class="fact-text">Skilled in Python, C++, web development, and deploying scalable systems on cloud platforms like GCP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Content Section -->
+    <section id="work" class="work-section">
+        <div class="container">
+            <!-- Toggle Buttons -->
+            <div class="section-header">
+                <h2 class="section-title">Professional Portfolio</h2>
+                <div class="toggle-container">
+                    <button class="toggle-btn active" data-tab="ai-engineer">AI Engineer/Software Developer</button>
+                    <button class="toggle-btn" data-tab="stem-educator">STEM Educator</button>
+                </div>
+            </div>
+
+            <!-- AI Engineer Content -->
+            <div id="ai-engineer-content" class="tab-content active">
+                <!-- Featured Projects -->
+                <div class="projects-section">
+                    <h3 class="subsection-title">Featured Projects</h3>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h4 class="project-title">Student Advisory Bot (GenAI)</h4>
+                            <div class="project-tags">
+                                <span class="tag tech-blue">Gen AI</span>
+                                <span class="tag teal">Flask</span>
+                                <span class="tag tech-blue">Gemini API</span>
+                                <span class="tag teal">GCP</span>
+                                <span class="tag tech-blue">Python</span>
+                            </div>
+                            <p class="project-impact">Developed a sophisticated AI chatbot that reduced 70% of manual student advisory effort.</p>
+                            <p class="project-description">
+                                Built end-to-end using Google's Gemini API and Flask. Engineered data preprocessing modules and deployed the app on Google Cloud App Engine to automate the advisory process. Gathered feedback to iteratively improve UX and accuracy using Gemini API.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/drive/folders/1OQLel3_-R9uUnJE01TdgyT-GjN5XOdZc" class="project-link tech-blue" target="_blank">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://drive.google.com/drive/folders/1OQLel3_-R9uUnJE01TdgyT-GjN5XOdZc" class="project-link teal" target="_blank">
+                                    <i data-lucide="code"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4 class="project-title">Brain Disease Detection via ML</h4>
+                            <div class="project-tags">
+                                <span class="tag tech-blue">Machine Learning</span>
+                                <span class="tag teal">Random Forest</span>
+                                <span class="tag tech-blue">CNN</span>
+                                <span class="tag teal">Data Preprocessing</span>
+                            </div>
+                            <p class="project-impact">Engineered and validated Random Forest and CNN models, achieving 89% accuracy on complex MRI datasets.</p>
+                            <p class="project-description">
+                                Implemented the full ML pipeline: cleaning MRI data, feature engineering, model training, and thorough evaluation/reporting. The project demonstrates end-to-end machine learning skills on a medical dataset. Defined success metrics and built ML models.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://drive.google.com/file/d/1g1V3_ua1usgjUvhLp2kQPcDVwxLqQl8Y/view?usp=sharing" class="project-link tech-blue" target="_blank">
+                                    <i data-lucide="external-link"></i>
+                                    View Report
+                                </a>
+                                <a href="https://github.com/Karthikeyavuyyuru1610/BRAIN_DESEASE_DETECTION" class="project-link teal" target="_blank">
+                                    <i data-lucide="code"></i>
+                                    Source Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <h4 class="project-title">MobiKart E-commerce Frontend</h4>
+                            <div class="project-tags">
+                                <span class="tag tech-blue">HTML5</span>
+                                <span class="tag teal">CSS3</span>
+                                <span class="tag tech-blue">JavaScript</span>
+                                <span class="tag teal">Bootstrap 5</span>
+                                <span class="tag tech-blue">Firebase</span>
+                            </div>
+                            <p class="project-impact">Built a fully responsive, user-friendly e-commerce front end with seamless Firebase Authentication and Firestore integration.</p>
+                            <p class="project-description">
+                                Developed using modern web technologies (HTML5, CSS3, JavaScript, Bootstrap 5). Implemented secure Firebase Authentication (email/password login) and connected to a Firestore backend for product and user data. The result is a polished shopping interface across devices.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://intern-e1d10.web.app/" class="project-link tech-blue" target="_blank">
+                                    <i data-lucide="external-link"></i>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skills-section">
+                    <h3 class="subsection-title">Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">💻</span>
+                                <h4 class="skill-title">Programming</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Python</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">C++</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Java</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">JavaScript</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">🧠</span>
+                                <h4 class="skill-title">AI/ML</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">LLMs</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Prompt Engineering</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Random Forest</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">CNN</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">🌐</span>
+                                <h4 class="skill-title">Web/Frontend</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">HTML/CSS/JS</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Flask</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Streamlit</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">☁️</span>
+                                <h4 class="skill-title">Cloud/DevOps</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Google Cloud (GCP)</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">AWS Basics</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">GitHub Actions</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">🗄️</span>
+                                <h4 class="skill-title">Databases</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">SQL</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Firebase</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <div class="skill-header">
+                                <span class="skill-icon">🛠️</span>
+                                <h4 class="skill-title">Tools & Platforms</h4>
+                            </div>
+                            <div class="skill-list">
+                                <div class="skill-item">
+                                    <span class="skill-name">Hugging Face</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Vertex AI</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Experience -->
+                <div class="experience-section">
+                    <h3 class="subsection-title">Professional Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">LLM Engineer</h4>
+                                <p class="timeline-company">Outliner AI (Remote) • Nov 2024 – Mar 2025</p>
+                                <ul class="timeline-description">
+                                    <li>Collaborated with PMs to improve chatbot performance based on user feedback and behavior</li>
+                                    <li>Experimented with prompt flows to reduce hallucination rate by 40%</li>
+                                    <li>Integrated LLMs in real-world customer use cases using agile delivery cycles</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+
+                        <div class="timeline-item right highlighted">
+                            <div class="timeline-content highlighted">
+                                <h4 class="timeline-title">Google Cloud GenAI Intern</h4>
+                                <p class="timeline-company">SmartInternz • Sep 2024 – Oct 2024</p>
+                                <ul class="timeline-description">
+                                    <li>Worked on GenAI workflows with Vertex AI, applying prompt-tuning and iteration</li>
+                                    <li>This internship is highlighted for its significance in AI development</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-dot highlighted"></div>
+                        </div>
+
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">ML Intern</h4>
+                                <p class="timeline-company">YBI Foundation • Jun 2023 – Aug 2023</p>
+                                <ul class="timeline-description">
+                                    <li>Conducted iterative modeling and metric tracking for Kaggle problems</li>
+                                    <li>Developed predictive ML models for Kaggle competitions</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements & Publications -->
+                <div class="achievements-section">
+                    <h3 class="subsection-title">Achievements & Publications</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-card tech-blue-border">
+                            <div class="achievement-header">
+                                <i data-lucide="award" class="achievement-icon tech-blue"></i>
+                                <h4 class="achievement-title">IEEE ICOICI 2024 Publication</h4>
+                            </div>
+                            <p class="achievement-description">
+                                Co-authored a paper published at the 2nd IEEE International Conference on Innovations in Control, Intelligence and Computing 2024.
+                            </p>
+                            <a href="https://drive.google.com/file/d/1uoUT_5XUN2Suh9UaQnYXyW00QNnwxL8K/view?usp=sharing" class="achievement-link tech-blue" target="_blank">
+                                <span>📄</span>
+                                View Certificate
+                            </a>
+                            <a href="https://ieeexplore.ieee.org/document/10696111" class="achievement-link tech-blue" target="_blank">
+                                <span>📄</span>
+                                View Research Paper
+                            </a>
+                        </div>
+
+                        <div class="achievement-card teal-border">
+                            <div class="achievement-header">
+                                <i data-lucide="tag" class="achievement-icon teal"></i>
+                                <h4 class="achievement-title">OpenAI GPT Models Certification</h4>
+                            </div>
+                            <p class="achievement-description">
+                                "Introduction to OpenAI GPT Models" course completion through Infosys Springboard platform.
+                            </p>
+                            <a href="https://drive.google.com/file/d/1uoUT_5XUN2Suh9UaQnYXyW00QNnwxL8K/view?usp=sharing" class="achievement-link tech-blue" target="_blank">
+                                <span>📄</span>
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="recognition-box">
+                        <p class="recognition-text">
+                            <i data-lucide="star" class="recognition-icon"></i>
+                            Recognized for practical application of AI and ML concepts in real-world projects and contributing to open-source platforms.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEM Educator Content -->
+            <div id="stem-educator-content" class="tab-content">
+                <!-- Overview -->
+                <div class="stem-overview">
+                    <div class="overview-card">
+                        <h3 class="overview-title">Educator and Engineer</h3>
+                        <p class="overview-description">
+                            Educator and Engineer with experience in STEM curriculum development, robotics instruction, and AI/ML product workflows. 
+                            Adept at crafting engaging lesson plans, managing digital tools, and applying modern pedagogy. 
+                            Passionate about empowering young learners through inquiry-based STEM education.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Teaching Experience -->
+                <div class="experience-section">
+                    <h3 class="subsection-title">Teaching Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item left">
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">STEM Educator</h4>
+                                <p class="timeline-company">Brower Schools (Hyderabad) • Current</p>
+                                <ul class="timeline-description">
+                                    <li>Delivering 40+ STEM lessons for Grades 3-10 using Latest AI tools like ChatGPT, Gemini, Grok, Meta, etc.</li>
+                                    <li>Developed worksheets, assessments, and lesson plans aligned with CBSE Science outcomes</li>
+                                    <li>Conducting offline classes for 150+ students, for Gen AI</li>
+                                    <li>Trained students to make their own customized Gen AI chatbots</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+
+                        <div class="timeline-item right">
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">STEM Educator</h4>
+                                <p class="timeline-company">BrightChamps (Remote / Hyderabad) • Nov 2024 – Mar 2025</p>
+                                <ul class="timeline-description">
+                                    <li>Designed and delivered 40+ STEM lessons for Grades 3-8 using Scratch, Arduino, and Python</li>
+                                    <li>Developed worksheets, assessments, and lesson plans aligned with CBSE Science outcomes</li>
+                                    <li>Conducted online instruction for 120+ students, achieving a 95% satisfaction rate</li>
+                                    <li>Trained students to make their own Apps , webpages and AR/VR games</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Skills -->
+                <div class="stem-skills-section">
+                    <h3 class="subsection-title">Teaching Skills & Tools</h3>
+                    <div class="stem-skills-grid">
+                        <div class="stem-skill-card">
+                            <div class="stem-skill-header">
+                                <i data-lucide="graduation-cap" class="stem-skill-icon tech-blue"></i>
+                                <h4 class="stem-skill-title">STEM Teaching</h4>
+                            </div>
+                            <ul class="stem-skill-list">
+                                <li>CBSE/ICSE Curriculum Design</li>
+                                <li>STEM Pedagogy</li>
+                                <li>Robotics Instruction</li>
+                            </ul>
+                        </div>
+
+                        <div class="stem-skill-card">
+                            <div class="stem-skill-header">
+                                <i data-lucide="users" class="stem-skill-icon teal"></i>
+                                <h4 class="stem-skill-title">Tools</h4>
+                            </div>
+                            <ul class="stem-skill-list">
+                                <li>Google Classroom</li>
+                                <li>Scratch Programming</li>
+                                <li>Arduino</li>
+                                <li>Roblox</li>
+                                <li>Thunkable</li>
+                                <li>CoSpaces</li>
+                                <li>Replit</li>
+                                <li>MIT App Inventor</li>
+                                <li>Machine Learning for Kids</li>
+                            </ul>
+                        </div>
+
+                        <div class="stem-skill-card">
+                            <div class="stem-skill-header">
+                                <i data-lucide="lightbulb" class="stem-skill-icon tech-blue"></i>
+                                <h4 class="stem-skill-title">Soft Skills</h4>
+                            </div>
+                            <ul class="stem-skill-list">
+                                <li>Communication</li>
+                                <li>Instruction</li>
+                                <li>Ownership</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+
+                        <div class="stem-skill-card">
+                            <div class="stem-skill-header">
+                                <i data-lucide="target" class="stem-skill-icon teal"></i>
+                                <h4 class="stem-skill-title">Methodologies</h4>
+                            </div>
+                            <ul class="stem-skill-list">
+                                <li>Bloom's Taxonomy</li>
+                                <li>Project-Based Learning</li>
+                                <li>Inquiry-Based Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Accomplishments -->
+                <div class="accomplishments-section">
+                    <h3 class="subsection-title">Teaching Accomplishments</h3>
+                    <div class="accomplishments-grid">
+                        <div class="accomplishment-card">
+                            <div class="accomplishment-icon-wrapper">
+                                <i data-lucide="presentation" class="accomplishment-icon tech-blue"></i>
+                            </div>
+                            <h4 class="accomplishment-number">100+</h4>
+                            <p class="accomplishment-description">Coding sessions delivered for students of grades 6-12</p>
+                        </div>
+
+                        <div class="accomplishment-card">
+                            <div class="accomplishment-icon-wrapper">
+                                <i data-lucide="target" class="accomplishment-icon teal"></i>
+                            </div>
+                            <h4 class="accomplishment-number">3+</h4>
+                            <p class="accomplishment-description">Major projects including AI chatbot, ML healthcare solution, and full-stack web frontend</p>
+                        </div>
+
+                        <div class="accomplishment-card">
+                            <div class="accomplishment-icon-wrapper">
+                                <i data-lucide="award" class="accomplishment-icon tech-blue"></i>
+                            </div>
+                            <h4 class="accomplishment-number">95%</h4>
+                            <p class="accomplishment-description">Student satisfaction rate achieved through engaging STEM instruction</p>
+                        </div>
+                    </div>
+
+                    <div class="recognition-box">
+                        <p class="recognition-text">
+                            <i data-lucide="star" class="recognition-icon"></i>
+                            Each project involved end-to-end development and deployment, demonstrating comprehensive technical and pedagogical skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content tech-blue-border">
+                            <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                            <p class="timeline-company tech-blue">Sir C.R. Reddy College of Engineering, Eluru</p>
+                            <p class="timeline-period">Graduated April 2024</p>
+                            <p class="timeline-cgpa">CGPA: 7.78/10</p>
+                        </div>
+                        <div class="timeline-dot tech-blue"></div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content teal-border">
+                            <h4 class="timeline-title">Intermediate (MPC)</h4>
+                            <p class="timeline-company teal">Sri Chaitanya Junior College, Guntur</p>
+                            <p class="timeline-period">Completed March 2020</p>
+                            <p class="timeline-cgpa">CGPA: 8.7/10</p>
+                        </div>
+                        <div class="timeline-dot teal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build the Future</h2>
+                <p class="section-subtitle">
+                    I'm always excited to connect with like-minded people and explore new opportunities. Feel free to reach out!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <!-- Contact Methods -->
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="mail" class="contact-icon tech-blue"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">Email</p>
+                                <a href="mailto:karthikeyavu@gmail.com" class="contact-value">
+                                    karthikeyavu@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="linkedin" class="contact-icon tech-blue"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">LinkedIn</p>
+                                <a href="https://linkedin.com/in/karthikeya-vuyyuru" target="_blank" class="contact-value">
+                                    linkedin.com/in/karthikeya-vuyyuru
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon-wrapper">
+                                <i data-lucide="github" class="contact-icon tech-blue"></i>
+                            </div>
+                            <div class="contact-details">
+                                <p class="contact-label">GitHub</p>
+                                <a href="https://github.com/KarthikeyaVuyyuru1610" target="_blank" class="contact-value">
+                                    github.com/KarthikeyaVuyyuru1610
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resume Download -->
+                    <div class="resume-download">
+                        <a href="https://drive.google.com/file/d/1aGEf43gVfxYWsFUtdTXhAnpymy_KsXzI/view?usp=sharing" class="btn-primary download-btn" target="_blank">
+                            <i data-lucide="download"></i>
+                            Download My Resume
+                        </a>
+                    </div>
+                </div>
+
+                <div class="collaboration-info">
+                    <h3 class="collaboration-title">Ready to Collaborate?</h3>
+                    <p class="collaboration-description">
+                        Whether you're looking for an AI engineer to build intelligent systems or a STEM educator to inspire the next generation, 
+                        I'm here to help turn your vision into reality.
+                    </p>
+                    <div class="services-list">
+                        <div class="service-item">
+                            <i data-lucide="bot" class="service-icon tech-blue"></i>
+                            <span class="service-text">AI/ML Development & Implementation</span>
+                        </div>
+                        <div class="service-item">
+                            <i data-lucide="code" class="service-icon teal"></i>
+                            <span class="service-text">Full-Stack Web Applications</span>
+                        </div>
+                        <div class="service-item">
+                            <i data-lucide="graduation-cap" class="service-icon tech-blue"></i>
+                            <span class="service-text">STEM Education & Curriculum Design</span>
+                        </div>
+                        <div class="service-item">
+                            <i data-lucide="cloud" class="service-icon teal"></i>
+                            <span class="service-text">Cloud Deployment & Scaling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2024 Karthikeya Vuyyuru. Built with passion for technology and education.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
